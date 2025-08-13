@@ -1,0 +1,32 @@
+lower = "SAvAnnAh"
+upper = "red 40"
+replace = "HhHh"
+strip = "       wowie   woah        "
+index = "count all of these for this z sorry man"
+slice = "useless important useless"
+string1 = "racetrack"
+split = "Whats happening with my words?"
+length = "pneumonoultramicroscopicsilicovolcanoconiosis"
+find = "one of these days, I'll catch those meddling kids!"
+
+#makes it lowercase
+print(lower.lower())
+#makes it uppercase
+print(upper.upper())
+#replaces all perfect matches of first string with second string
+print(replace.replace("h", "a"))
+#removes extra spaces at beginnig or end of string
+print(strip.strip())
+#gets a character from a specific place. in this example, starting at 0, including spaces, the z is the 28th lettter in the string, so that is what gets printed. This can also go backwards by typing name5[-3], and this would be the 3rd character from the end, and it starts at 1 instead of 0
+print(index[28])
+#slices the string at the specified indexes, including the first index but not including the last index. you can also control how much it skips by. the default is 1. for example, if i run the same code but the numbers are [8:17:2], it would look like "iprat". if a section is left blank, it will go to either the beginning or the end of the string. For instance, if the number was [8:], it would look like "important useless".
+print(slice[8:17])
+#to reverse something, just slice at the end and work backwards. len stands for length. dont worry about the details of this code, all it does is reverse it.
+reverse = string1[len(string1)::-1]
+print(reverse)
+#splits the string into a list. EX: "hello world" would turn into ['hello', 'world']
+print(split.split())
+#counts the length of the string. It can also find the length of a list (like if you used the .split() it would count the amount of words in the string)
+print(len(length))
+#finds the first occurance of the string(in the parenthesis) in the string(variable). also very simple. starts counting at 0. you can also find the last instance of the string(in the parenthesis) by doing find.rfind("")
+print(find.find("l"))
