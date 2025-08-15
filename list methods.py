@@ -56,3 +56,17 @@ print(replaces)
 whatshappening = ["red 40", 'adrian', 'enrique', 'eeffoc', 'instagrammer', 'eepy', 'qwsqzkg']
 whatshappening.sort()
 print(whatshappening)
+
+
+#Dictionaries
+
+#dictionaries are lists but they have 2 values now. for example, a dictionary would look like
+# classmates = {
+#   "Gordon" : 8,
+#   "Vance" : 12,
+#   "Lamar" : 10
+#}
+#first item is called a key and the second is called a value. you can make an empty dictionary like dictionary = {}.
+#to access a value in a dictionary, you use dictionary["Key"]. 
+#to change a value (or add a new item) in a dictionary, you use dictionary["Key"] = newValue
+#to remove a value in a dictionary, you use dictionary.pop("Key")
