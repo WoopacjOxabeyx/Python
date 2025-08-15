@@ -70,3 +70,9 @@ print(whatshappening)
 #to access a value in a dictionary, you use dictionary["Key"]. 
 #to change a value (or add a new item) in a dictionary, you use dictionary["Key"] = newValue
 #to remove a value in a dictionary, you use dictionary.pop("Key")
+
+#to check how many values are in the dictionary, use len(dictionary)
+#to check if a dictionary has a specific key, use if "Key" in dictionary:
+#you can also use it to check if it is not in there by using 
+#if "Key" not in dictionary:
+#to convert a list to a dictionary, use dictionary = dict.fromkeys(list, "Value"). be careful bc this makes all of the values be the same, in this case all of the keys in dictionary will be "Value"
