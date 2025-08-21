@@ -59,20 +59,44 @@ print(whatshappening)
 
 
 #Dictionaries
-
+print(" ")
 #dictionaries are lists but they have 2 values now. for example, a dictionary would look like
-# classmates = {
-#   "Gordon" : 8,
-#   "Vance" : 12,
-#   "Lamar" : 10
-#}
-#first item is called a key and the second is called a value. you can make an empty dictionary like dictionary = {}.
-#to access a value in a dictionary, you use dictionary["Key"]. 
-#to change a value (or add a new item) in a dictionary, you use dictionary["Key"] = newValue
-#to remove a value in a dictionary, you use dictionary.pop("Key")
+resistance = {
+    "Gordon" : 8,
+    "Vance" : 12,
+    "Lamar" : 10
+}
+#first item is called a key and the second is called a value. you can make an empty dictionary like 
+mt = {}
+#to access a value in a dictionary, you use something like
+vro = resistance["Vance"]
+print(vro)
+#to change a value (or add a new item) in a dictionary
+resistance["Gordon"] = 1
+print(resistance)
+#to remove a value in a dictionary, you use 
+resistance.pop("Lamar")
 
-#to check how many values are in the dictionary, use len(dictionary)
-#to check if a dictionary has a specific key, use if "Key" in dictionary:
-#you can also use it to check if it is not in there by using 
-#if "Key" not in dictionary:
-#to convert a list to a dictionary, use dictionary = dict.fromkeys(list, "Value"). be careful bc this makes all of the values be the same, in this case all of the keys in dictionary will be "Value"
+#to check how many values are in the dictionary, use 
+print(len(resistance))
+#to check if a dictionary has a specific key, use       if "Key" in dictionary:
+#you can also use it to check if it is not in there by using                                                    if "Key" not in dictionary:
+#to convert a list to a dictionary, use
+list4dict = [2, 67, 69, 42, 354627, 134]
+dictionar = dict.fromkeys(list4dict, "Value")
+print(dictionar)
+#be careful bc this makes all of the values be the same, in this case all of the values in dictionary will be "Value"
+
+#to print out all of the keys in the dictionary, use
+for x in resistance:
+    print(x)
+#to print out all of the values in the dictionary, use
+for x in resistance.values():
+    print(x)
+#to print out both keys and values, use
+for x, y in resistance.items():
+    print(x,y)
+
+
+#Tuples
+#tuples are lists that are unchangable. you can access the tuple the same way as a list with tuple[1] (starting at 0) or tuple[-1] (starting at -1). you cannot add or remove items from the tuple.
