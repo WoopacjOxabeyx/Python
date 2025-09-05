@@ -1,0 +1,12 @@
+#in order to try and see if a code piece fails, use
+try:
+  #code
+#this is what runs if the try code fails
+except:
+  #code
+#if the try code completes normally, it runs this code
+else:
+  #code
+#this runs regardless of the outcome
+finally:
+  #code
