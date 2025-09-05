@@ -30,3 +30,13 @@ print(split.split())
 print(len(length))
 #finds the first occurance of the string(in the parenthesis) in the string(variable). also very simple. starts counting at 0. you can also find the last instance of the string(in the parenthesis) by doing find.rfind("")
 print(find.find("l"))
+
+
+#Concatenating
+
+#obviously there is the + thing but that doesnt work for other data types like integers. so you can use the "f-String" approach:
+age = 4
+print(f"my name is Yuvin Marisini and I am {age} years old!")
+
+#you can also just use a comma and its way easier than this
+print("my name is Yuvin Marisini and I am", age, "Years old!")
