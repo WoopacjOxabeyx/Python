@@ -1,0 +1,64 @@
+
+
+
+#to open a txt file, use
+file = open("wsg.txt", "r")
+#r means read, which means that we cannot edit this file from this variable
+
+#to read a txt, use
+print(file.read())
+#to read the first x amount of characters (starting at 1), use
+print(file.read(25))
+#to read a specific line, use
+print(file.readline())
+#multiple readline code pieces will read the line after the last.
+
+#To return all the lines in a file as a list with each list item being a line (idk what this means either), use
+print(file.readlines())
+#make sure to close the txt using
+file.close()
+
+#a means append, which means that you can add text to the end of the txt
+#w means write, which means that you can delete everything and write something new
+file2 = open(wsg.txt, "a")
+#to append text to the end of the txt, use
+file2.write("this is the stuff we are adding wowie zowie")
+print(file2.read())
+file2.close()
+
+
+#python can work with files using the os path.
+#the os path allows you to find, create, manage, delete, and maintain different folders.
+#the io path allows you to read from and write to files
+
+#a module is another name for a single .py file with Python code
+#a package is a folder that can contain multiple modules
+
+#the import keyword is used to load other python source code files into your current code page. To access other folders, we import the io path with the following code:
+import os
+
+#Let's say we wanted to use a specific function that you already coded, but it's in a different Python file. There's no need to retype all that code. You can simply import that function into your code.
+
+#For example, let's say we wanted to use the function adventure() that lives in the path module of the os package. We would use the following code:
+#os.path.adventure
+
+#this is to check if the specified file exists or not. the function returns a boolean.
+print(os.path.isfile("C:\\Users\owl.png"))
+
+#this is to check if the directory exists or not. also a boolean.
+print(os.path.isdir("C:\\Users"))
+
+#this will remove a file from a directory.
+os.path.remove("C:\\Users\owl.png")
+
+#this is used to retun the file name.
+print(os.path.basename("/squirrel/elephantgreenscreeneffect.gif"))
+#will print elephantgreenscreeneffect.gif
+
+#this gives us the directory name where the folder / file is located
+print(os.path.dirname("/squirrel/elegif.gif"))
+#will print squirrel
+
+#When you start a Python file, one of the things it creates automatically is a list that contains all of directories it will use to search for modules when importing. This list is available in a variable named sys.path. Note that the empty '' entry means the current directory.
+sys.path
+#sys can also display error messages that would otherwise not show
