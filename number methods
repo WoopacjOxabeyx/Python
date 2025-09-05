@@ -1,0 +1,66 @@
+#always give credit when using outside libraries.
+#Math concepts used from the Python Math Library
+import random
+import math
+import datetime
+#for rounding, the second number is how much decimal points to include
+rounding = 10 / 3
+print(round(rounding, 2))
+
+#for rounding up to the next whole number. make sure to import math
+print(math.ceil(3.2))
+
+#for rounding down to the next whole number. make sure to import math
+print(math.floor(3.2))
+
+#literally just pi. import math
+print(math.pi)
+
+#for finding the square root of a number. import math.
+print(math.sqrt(100))
+
+#for finding something raised to a certain power. the second number is the exponent.
+print(pow(5, 2))
+
+
+#for finding the range in between 2 numbers
+for x in range(0,5):
+    print(x)
+
+#for finding a random number. make sure that you use import random before doing anything and that you give credit to any library that you use (like this one)
+print(random.random())
+#this one above only prints a number from 0 to 1. but the one below prints any number from the range.
+print(random.randint(1, 40))
+
+
+#to get the exact time. make sure to import datetime
+print(datetime.datetime.now())
+
+#the date is not any data type, so we can make it a string so we can use it in programs. str is for string and f is for format.
+#there are a lot of things that you can put into the parentheses, for now i am going to use %X, which generates the local time (string).
+x = datetime.datetime.now()
+print(x.strftime("%X"))
+
+#this is how you print a 2 digit month as a string.
+print(x.strftime("%m"))
+
+#this is how you print a 2 digit day as a string.
+print(x.strftime("%d"))
+
+#this is how you print a 4 digit year as a string. if it is a lowercase, it will be 2 digits.
+print(x.strftime("%Y"))
+
+#this is how you print the weekday. use a capitalized letter to print the long form.
+print(x.strftime("%a"))
+
+#this is how you print the month. use a capitalized letter to print the long form.
+print(x.strftime("%b"))
+
+#this is how you print the minute counter
+print(x.strftime("%M"))
+
+#this is how you print the second counter
+print(x.strftime("%S"))
+
+#to generate today's date as a string. import datetime
+print(datetime.date.today())
